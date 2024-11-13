@@ -1,0 +1,9 @@
+# Use the official Nginx image
+FROM nginx:latest
+
+# Copy the Nginx configuration file
+COPY nginx/default.conf /etc/nginx/conf.d/
+
+# Expose port 80
+EXPOSE 80
+
